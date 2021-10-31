@@ -7,7 +7,15 @@
         <meta name="description" content=""/>
     </head>
     <body>
+        <input type="button" id="omikuji_btn" value="おみくじを引く">
+        <script>
+            document.getElementById("omikuji_btn").onclick=function(){
+                /* くじびき */
+                const kujibiki =['大吉','中吉','小吉'];
 
-        <script src="sample.js"></script>
+                const kujirandom = Math.floor(Math.random()*kujibiki.length);
+                alert(kujibiki[kujirandom]);
+            }
+        </script>
     </body>
 </html>

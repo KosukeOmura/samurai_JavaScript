@@ -1,4 +1,16 @@
 
+const daiet=70;
+
+switch(daiet){
+    case 80:
+        alert(80 + 'kgです');
+        break;
+    case 70:
+        consoe.log(70 + 'kgです');
+    default:
+        alert('どれにも該当しません');
+}
+
 let myName = 'こうすけ';
 let age = '23';
 
