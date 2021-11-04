@@ -11,6 +11,16 @@ switch(daiet){
         alert('どれにも該当しません');
 }
 
+if(daiet >= 80){
+    console.log('もっと頑張りましょう');
+}else if(daiet >=70){
+    console.log('確実に成果出ていますよ');
+}else if(daiet >60){
+    console.log('ついに目の前!');
+}else if(daiet <= 60){
+    console.log('ダイエット成功です！');
+}
+
 let myName = 'こうすけ';
 let age = '23';
 

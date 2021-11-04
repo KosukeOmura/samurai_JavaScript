@@ -1,0 +1,81 @@
+.hp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.player_main {
+  width: 100%;
+  height: auto;
+}
+
+.player_main #player {
+  text-align: center;
+}
+
+.player_main #playerCurrent_hp {
+  text-align: center;
+}
+
+.player_main #playerMax_hp {
+  text-align: center;
+}
+
+.player_main #playerCurrent_hp::after {
+  content: '/';
+  margin: 0 5px;
+}
+
+.venom_main {
+  width: 100%;
+  height: auto;
+}
+
+.venom_main #venom {
+  text-align: center;
+}
+
+.venom_main #venomCurrent_hp {
+  text-align: center;
+}
+
+.venom_main #venomMax_hp {
+  text-align: center;
+}
+
+.venom_main #venomCurrent_hp::after {
+  content: '/';
+  margin: 0 5px;
+}
+
+.button_main {
+  width: 100%;
+  height: auto;
+}
+
+.button_main #attack {
+  margin: 50px auto 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #ac0303;
+  color: #fff;
+  width: 200px;
+  height: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.button_main .deacitve {
+  pointer-events: none;
+  opacity: .5;
+}
+/*# sourceMappingURL=index.css.map */

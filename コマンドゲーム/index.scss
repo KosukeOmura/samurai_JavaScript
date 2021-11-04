@@ -1,0 +1,59 @@
+.hp {
+    display: flex;
+    justify-content: center;
+}
+
+.player_main {
+    width: 100%;
+    height: auto;
+    #player {
+        text-align: center;
+    }
+    #playerCurrent_hp {
+        text-align: center;
+    }
+    #playerMax_hp {
+        text-align: center;
+    }
+    #playerCurrent_hp::after {
+        content:'/';
+        margin:0 5px;
+    }
+}
+.venom_main {
+    width: 100%;
+    height: auto;
+    #venom {
+        text-align: center;
+    }
+    #venomCurrent_hp {
+        text-align: center;
+    }
+    #venomMax_hp {
+        text-align: center;
+    }
+    #venomCurrent_hp::after {
+        content:'/';
+        margin:0 5px;
+    }
+}
+
+.button_main {
+    width: 100%;
+    height: auto;
+    #attack {
+        margin:50px auto 0;
+        display: flex;
+        justify-content: center;
+        background-color:rgb(172, 3, 3);
+        color: #fff;
+        width: 200px;
+        height: 50px;
+        align-items: center; //文字を要素の真ん中に持ってくる
+        cursor: pointer;
+    }
+    .deacitve {
+        pointer-events: none;
+        opacity:.5;
+    }
+}
