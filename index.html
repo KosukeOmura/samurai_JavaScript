@@ -7,19 +7,11 @@
         <meta name="description" content=""/>
     </head>
     <body>
-        <!--おみくじ用スクリプト-->
-        <input type="button" id="omikuji_btn" value="おみくじを引く">
+        <section class="villan_main">
+            <h2 id="villan"></h2>
+            <div id="villanCurrent_hp"></div>
+        </section>
 
-
-        <!--おみくじ用スクリプト-->
-        <script>
-            document.getElementById("omikuji_btn").onclick=function(){
-                /* くじびき */
-                const kujibiki =['大吉','中吉','小吉'];
-
-                const kujirandom = Math.floor(Math.random()*kujibiki.length);
-                alert(kujibiki[kujirandom]);
-            }
-        </script>
+        <script src="sample.js"></script>
     </body>
 </html>
