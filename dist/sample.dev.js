@@ -12,7 +12,11 @@
 var villanData = {
   hp: 10,
   name: "トムラ"
-};
+}; //htmlに表示させる処理
+
+function insertText(id, text) {
+  document.getElementById(id).textContent = text;
+}
 
 while (true) {
   //闘うか逃げるかの選択
@@ -21,7 +25,7 @@ while (true) {
   var attack = Math.floor(Math.random() * 10); //【逃げる】を選択した場合
 
   if (command === '2') {
-    console.log("無事に逃げました");
+    insertText("villan", "無事に逃げました");
     break; //【攻撃】を選択した場合
   } else if (command === '1') {
     //ヴィランHPにhpと攻撃ダメージを引いた数値を格納

@@ -12,6 +12,12 @@ const villanData={
     name:"トムラ"
 };
 
+
+//htmlに表示させる処理
+function insertText(id,text){
+    document.getElementById(id).textContent = text;
+}
+
 while(true) {
 
      //闘うか逃げるかの選択
@@ -22,7 +28,7 @@ while(true) {
      //【逃げる】を選択した場合
     if(command === '2'){
 
-        console.log("無事に逃げました");
+        insertText("villan","無事に逃げました");
         break;
 
     //【攻撃】を選択した場合
